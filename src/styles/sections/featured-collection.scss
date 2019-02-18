@@ -4,6 +4,13 @@
  * Base styling for the featured collection product grid.
  *
  */
+
+/* ===HIDE ELEMENTS=== */
+header.site-header,
+iframe {
+  display: none;
+}
+
 .featured-collection {
   background: gold;
 }
