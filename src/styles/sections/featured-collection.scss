@@ -69,6 +69,7 @@ iframe {
     }
 
     .product_head {
+      position: relative;
       margin-bottom: 16px;
       @include media-query($small) {
         margin-bottom: 8px;
@@ -77,11 +78,33 @@ iframe {
       img {
         width: 100%;
       }
+
+      .tag_sale {
+        position: absolute;
+        top: 14px;
+        right: 15px;
+        @include media-query($small) {
+          display: none;
+        }
+      }
+
+      .add_cart {
+        position: absolute;
+        bottom: 14px;
+        left: 0;
+        margin: 0 18px;
+        right: 0;
+        z-index: 1;
+        @include media-query($small) {
+          display: none;
+        }
+      }
     }
 
     .product_desc {
       h5.title {
         margin: 0 0 6px;
+
         @include media-query($small) {
           margin: 0 0 8px;
         }

@@ -8,4 +8,30 @@
   text-decoration: none;
   user-select: none;
   appearance: none;
+  padding: 15px 19px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center;
+
+  @include media-query($small) {
+    padding: 8px 12px 10px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.tag_sale {
+  padding: 4px 14px;
+  font-size: 14px;
+}
+
+.primary {
+  background: #003366;
+  color: #fff;
+}
+
+.secondary {
+  background: #fff;
+  color: #003366;
 }
