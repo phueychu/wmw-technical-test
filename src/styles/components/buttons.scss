@@ -29,9 +29,25 @@
 .primary {
   background: #003366;
   color: #fff;
+
+  &:visited {
+    color: #fff;
+  }
+
+  &:active {
+    color: #fff;
+  }
 }
 
 .secondary {
   background: #fff;
   color: #003366;
+
+  &:visited {
+    color: #003366;
+  }
+
+  &:active {
+    color: #003366;
+  }
 }
