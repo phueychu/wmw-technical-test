@@ -12,5 +12,35 @@ iframe {
 }
 
 .featured-collection {
-  background: gold;
+  padding: 59px 10px;
+
+  .heading_container {
+    padding: 0 10px;
+    text-align: center;
+
+    h1.title,
+    .desc {
+      width: 611px;
+      margin: 0 auto;
+
+      @include media-query($small) {
+        width: auto;
+      }
+    }
+
+    h1.title {
+      margin-bottom: 19px;
+      @include media-query($small) {
+        margin-bottom: 8px;
+      }
+    }
+
+    .desc {
+      margin-bottom: 69px;
+
+      @include media-query($small) {
+        margin-bottom: 24px;
+      }
+    }
+  }
 }
