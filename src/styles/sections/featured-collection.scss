@@ -43,4 +43,49 @@ iframe {
       }
     }
   }
+
+  .product_container {
+    width: 1374px;
+    margin: 0 auto;
+    font-size: 0; /* remove white spacing for inline-block*/
+    @media screen and (max-width: 1374px) {
+      width: auto;
+      text-align: center;
+    }
+
+    a.link {
+      width: 306px;
+      margin: 0 17px 20px;
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      @media screen and (max-width: 1374px) {
+        width: 28%;
+      }
+      @include media-query($small) {
+        width: 130px;
+        margin: 0 10px 18px;
+      }
+    }
+
+    .product_head {
+      margin-bottom: 16px;
+      @include media-query($small) {
+        margin-bottom: 8px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .product_desc {
+      h5.title {
+        margin: 0 0 6px;
+        @include media-query($small) {
+          margin: 0 0 8px;
+        }
+      }
+    }
+  }
 }
