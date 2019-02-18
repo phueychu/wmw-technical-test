@@ -13,6 +13,9 @@ iframe {
 
 .featured-collection {
   padding: 59px 10px;
+  @include media-query($small) {
+    padding: 25px 9px;
+  }
 
   .heading_container {
     padding: 0 10px;
@@ -110,5 +113,10 @@ iframe {
         }
       }
     }
+  }
+
+  .view_collection {
+    margin-top: 10px;
+    text-align: center;
   }
 }
